@@ -610,255 +610,261 @@ export default function Calculadora() {
     }
   }, []);
 
-//   return (
-//     <div>
-//       <body className="dark">
-//         <div className="index">
-//           <div className="box box1">
-//             <div className="entradas-dados">
-//               <div className="tabela-dados dados-reais">
-//                 <h2 className="title">Valores Reais</h2>
-//                 <input type="number" id="zalinha" placeholder="ZA" />
-//                 <input type="number" id="zblinha" placeholder="ZB" />
-//                 <input type="number" id="zclinha" placeholder="ZC" />
-//                 <input type="number" id="zcarga" placeholder="LINHA" />
-//                 <input type="number" id="zn" placeholder="ZN CASO 2" />
-//                 <input type="number" id="vab" placeholder="VAN" />
-//               </div>
-//               <div className="tabela-dados dados-img">
-//                 <h2 className="title">Valores Imaginários</h2>
-//                 <input type="number" id="zalinai" placeholder="ZA" />
-//                 <input type="number" id="zblinhai" placeholder="ZB" />
-//                 <input type="number" id="zclinhai" placeholder="ZC" />
-//                 <input type="number" id="zcargai" placeholder="LINHA" />
-//                 <input type="number" id="zni" placeholder="ZN CASO 2" />
-//                 <input type="number" id="vabi" placeholder="VAN" />
-//               </div>
-//             </div>
-//             <div className="entradas-opcoes">
-//               <div className="tabela-dados radios options">
-//                 <div className="radio-item item">
-//                   <div className="checkbox">
-//                     <input
-//                       type="radio"
-//                       id="caso1"
-//                       name="customRadio"
-//                       className="custom-control-input"
-//                     />
-//                   </div>
-//                   <div className="label">
-//                     <label className="custom-control-label" for="customRadio1">
-//                       CASO 1
-//                     </label>
-//                   </div>
-//                 </div>
-//                 <div className="radio-item item">
-//                   <div className="checkbox">
-//                     <input
-//                       type="radio"
-//                       id="caso2"
-//                       name="customRadio"
-//                       className="custom-control-input"
-//                     />
-//                   </div>
-//                   <div className="label">
-//                     <label className="custom-control-label" for="customRadio2">
-//                       CASO 2
-//                     </label>
-//                   </div>
-//                 </div>
-//                 <div className="radio-item item">
-//                   <div className="checkbox">
-//                     <input
-//                       type="radio"
-//                       id="caso3"
-//                       name="customRadio"
-//                       className="custom-control-input"
-//                     />
-//                   </div>
-//                   <div className="label">
-//                     <label className="custom-control-label" for="customRadio2">
-//                       CASO 3
-//                     </label>
-//                   </div>
-//                 </div>
+  return (
+    <div>
+      <body className="dark">
+        <div className="index">
+          <div className="box box1">
+            <div className="entradas-dados">
+              <div className="tabela-dados dados-reais">
+                <h2 className="title">Valores Reais</h2>
+                <input type="number" id="zalinha" placeholder="ZA" />
+                <input type="number" id="zblinha" placeholder="ZB" />
+                <input type="number" id="zclinha" placeholder="ZC" />
+                <input type="number" id="zcarga" placeholder="LINHA" />
+                <input type="number" id="zn" placeholder="ZN CASO 2" />
+                <input type="number" id="vab" placeholder="VAN" />
+              </div>
+              <div className="tabela-dados dados-img">
+                <h2 className="title">Valores Imaginários</h2>
+                <input type="number" id="zalinai" placeholder="ZA" />
+                <input type="number" id="zblinhai" placeholder="ZB" />
+                <input type="number" id="zclinhai" placeholder="ZC" />
+                <input type="number" id="zcargai" placeholder="LINHA" />
+                <input type="number" id="zni" placeholder="ZN CASO 2" />
+                <input type="number" id="vabi" placeholder="VAN" />
+              </div>
+            </div>
+            <div className="entradas-opcoes">
+              <div className="tabela-dados radios options">
+                <div className="radio-item item">
+                  <div className="checkbox">
+                    <input
+                      type="radio"
+                      id="caso1"
+                      name="customRadio"
+                      className="custom-control-input"
+                    />
+                  </div>
+                  <div className="label">
+                    <label className="custom-control-label" for="customRadio1">
+                      CASO 1
+                    </label>
+                  </div>
+                </div>
+                <div className="radio-item item">
+                  <div className="checkbox">
+                    <input
+                      type="radio"
+                      id="caso2"
+                      name="customRadio"
+                      className="custom-control-input"
+                    />
+                  </div>
+                  <div className="label">
+                    <label className="custom-control-label" for="customRadio2">
+                      CASO 2
+                    </label>
+                  </div>
+                </div>
+                <div className="radio-item item">
+                  <div className="checkbox">
+                    <input
+                      type="radio"
+                      id="caso3"
+                      name="customRadio"
+                      className="custom-control-input"
+                    />
+                  </div>
+                  <div className="label">
+                    <label className="custom-control-label" for="customRadio2">
+                      CASO 3
+                    </label>
+                  </div>
+                </div>
 
-//                 <button className="btns" onclick="deselecionarRadios()">
-//                   Redefinir opção
-//                 </button>
-//               </div>
-//               <div className=" options">
-//                 <div className="item">
-//                   <div className="checkbox">
-//                     <input
-//                       type="checkbox"
-//                       id="fontepol"
-//                       name="fontepol"
-//                       value="fontepol"
-//                     />
-//                   </div>
-//                   <div className="label">
-//                     <label className="custom-control-label" for="customRadio2">
-//                       FONTE POLAR
-//                     </label>
-//                   </div>
-//                 </div>
-//                 <div className="item">
-//                   <div className="checkbox">
-//                     <input type="checkbox" id="VAB" name="VAB" value="VAB" />
-//                   </div>
-//                   <div className="label">
-//                     <label className="custom-control-label" for="customRadio2">
-//                       VAB
-//                     </label>
-//                   </div>
-//                 </div>
-//                 <div className="item">
-//                   <div className="checkbox">
-//                     <input
-//                       type="checkbox"
-//                       id="fase"
-//                       name="fase"
-//                       value="negativa"
-//                     />
-//                   </div>
-//                   <div className="label">
-//                     <label className="custom-control-label" for="customRadio2">
-//                       SEQUÊNCIA DE FASE NEGATIVA
-//                     </label>
-//                   </div>
-//                 </div>
-//               </div>
-//               <div className="fonte options line2">
-//                 <div className="item">
-//                   <div className="checkbox">
-//                     <input
-//                       type="checkbox"
-//                       id="triangulo"
-//                       name="triangulo"
-//                       value="triangulo"
-//                     />
-//                   </div>
-//                   <div className="label">
-//                     <label className="custom-control-label" for="customRadio2">
-//                       TRIÂNGULO
-//                     </label>
-//                   </div>
-//                 </div>
-//                 <div className="item">
-//                   <div className="checkbox">
-//                     <input
-//                       type="checkbox"
-//                       id="polar"
-//                       name="polar"
-//                       value="polar"
-//                     />
-//                   </div>
-//                   <div className="label">
-//                     <label className="custom-control-label" for="customRadio2">
-//                       POLAR
-//                     </label>
-//                   </div>
-//                 </div>
-//               </div>
-//               <div className="fonte options line2 linebtns">
-//                 <button className="btns btns-calcula" onClick={caso1}>
-//                   CALCULAR
-//                 </button>
-//                 <button className="btns btns-calcula" onClick={LimparDados}>
-//                   LIMPAR DADOS
-//                 </button>
-//                 <button
-//                   className="btns btns-calcula"
-//                   onClick={LimparResultados}
-//                 >
-//                   LIMPAR RESULTADOS
-//                 </button>
-//               </div>
-//             </div>
-//           </div>
-//           <div className="box box2">
-//             <div className="resultados-polar resultados">
-//               <h2 className="title">Valores em polar</h2>
-//               <table className="tabela-respostas ">
-//                 <thead>
-//                   <tr>
-//                     <th scope="col">A</th>
-//                     <th scope="col">B</th>
-//                     <th scope="col">C</th>
-//                   </tr>
-//                 </thead>
-//                 <tbody>
-//                   <tr>
-//                     <td id="ia">0</td>
-//                     <td id="ib">0</td>
-//                     <td id="ic">0</td>
-//                   </tr>
-//                   <tr>
-//                     <td id="linhaa">0</td>
-//                     <td id="linhab">0</td>
-//                     <td id="linhac">0</td>
-//                   </tr>
-//                   <tr>
-//                     <td id="fasea">0</td>
-//                     <td id="faseb">0</td>
-//                     <td id="fasec">0</td>
-//                   </tr>
-//                   <tr>
-//                     <td id="pofa">0</td>
-//                     <td id="pofb">0</td>
-//                     <td id="pofc">0</td>
-//                   </tr>
-//                   <tr>
-//                     <td id="pofa2">0</td>
-//                     <td id="pofb2">0</td>
-//                     <td id="pofc2">0</td>
-//                   </tr>
-//                 </tbody>
-//               </table>
-//             </div>
-//             <div className="resultados-retangular resultados">
-//               <h2 className="title">Valores em Retangular</h2>
-//               <table className="tabela-respostas">
-//                 <thead>
-//                   <tr>
-//                     <th scope="col">A</th>
-//                     <th scope="col">B</th>
-//                     <th scope="col">C</th>
-//                   </tr>
-//                 </thead>
-//                 <tbody>
-//                   <tr>
-//                     <td id="iap">0</td>
-//                     <td id="ibp">0</td>
-//                     <td id="icp">0</td>
-//                   </tr>
-//                   <tr>
-//                     <td id="linhaap">0</td>
-//                     <td id="linhabp">0</td>
-//                     <td id="linhacp">0</td>
-//                   </tr>
-//                   <tr>
-//                     <td id="faseap">0</td>
-//                     <td id="fasebp">0</td>
-//                     <td id="fasecp">0</td>
-//                   </tr>
-//                   <tr>
-//                     <td id="pofap">0</td>
-//                     <td id="pofbp">0</td>
-//                     <td id="pofcp">0</td>
-//                   </tr>
-//                   <tr>
-//                     <td id="pofap2">0</td>
-//                     <td id="pofbp2">0</td>
-//                     <td id="pofcp2">0</td>
-//                   </tr>
-//                 </tbody>
-//               </table>
-//             </div>
-//           </div>
-//         </div>
-//       </body>
-//     </div>
-//   );
+                <button className="btns" onclick="deselecionarRadios()">
+                  Redefinir opção
+                </button>
+              </div>
+              <div className=" options">
+                <div className="item">
+                  <div className="checkbox">
+                    <input
+                      type="checkbox"
+                      id="fontepol"
+                      name="fontepol"
+                      value="fontepol"
+                    />
+                  </div>
+                  <div className="label">
+                    <label className="custom-control-label" for="customRadio2">
+                      FONTE POLAR
+                    </label>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="checkbox">
+                    <input type="checkbox" id="VAB" name="VAB" value="VAB" />
+                  </div>
+                  <div className="label">
+                    <label className="custom-control-label" for="customRadio2">
+                      VAB
+                    </label>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="checkbox">
+                    <input
+                      type="checkbox"
+                      id="fase"
+                      name="fase"
+                      value="negativa"
+                    />
+                  </div>
+                  <div className="label">
+                    <label className="custom-control-label" for="customRadio2">
+                      SEQUÊNCIA DE FASE NEGATIVA
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="fonte options line2">
+                <div className="item">
+                  <div className="checkbox">
+                    <input
+                      type="checkbox"
+                      id="triangulo"
+                      name="triangulo"
+                      value="triangulo"
+                    />
+                  </div>
+                  <div className="label">
+                    <label className="custom-control-label" for="customRadio2">
+                      TRIÂNGULO
+                    </label>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="checkbox">
+                    <input
+                      type="checkbox"
+                      id="polar"
+                      name="polar"
+                      value="polar"
+                    />
+                  </div>
+                  <div className="label">
+                    <label className="custom-control-label" for="customRadio2">
+                      POLAR
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="fonte options line2 linebtns">
+                <button 
+                  className="btns btns-calcula" 
+                  // onClick={caso1}
+                >
+                  CALCULAR
+                </button>
+                <button 
+                  className="btns btns-calcula" 
+                  // onClick={LimparDados}
+                  >
+                  LIMPAR DADOS
+                </button>
+                <button
+                  className="btns btns-calcula"
+                  // onClick={LimparResultados}
+                >
+                  LIMPAR RESULTADOS
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="box box2">
+            <div className="resultados-polar resultados">
+              <h2 className="title">Valores em polar</h2>
+              <table className="tabela-respostas ">
+                <thead>
+                  <tr>
+                    <th scope="col">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="ia">0</td>
+                    <td id="ib">0</td>
+                    <td id="ic">0</td>
+                  </tr>
+                  <tr>
+                    <td id="linhaa">0</td>
+                    <td id="linhab">0</td>
+                    <td id="linhac">0</td>
+                  </tr>
+                  <tr>
+                    <td id="fasea">0</td>
+                    <td id="faseb">0</td>
+                    <td id="fasec">0</td>
+                  </tr>
+                  <tr>
+                    <td id="pofa">0</td>
+                    <td id="pofb">0</td>
+                    <td id="pofc">0</td>
+                  </tr>
+                  <tr>
+                    <td id="pofa2">0</td>
+                    <td id="pofb2">0</td>
+                    <td id="pofc2">0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="resultados-retangular resultados">
+              <h2 className="title">Valores em Retangular</h2>
+              <table className="tabela-respostas">
+                <thead>
+                  <tr>
+                    <th scope="col">A</th>
+                    <th scope="col">B</th>
+                    <th scope="col">C</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="iap">0</td>
+                    <td id="ibp">0</td>
+                    <td id="icp">0</td>
+                  </tr>
+                  <tr>
+                    <td id="linhaap">0</td>
+                    <td id="linhabp">0</td>
+                    <td id="linhacp">0</td>
+                  </tr>
+                  <tr>
+                    <td id="faseap">0</td>
+                    <td id="fasebp">0</td>
+                    <td id="fasecp">0</td>
+                  </tr>
+                  <tr>
+                    <td id="pofap">0</td>
+                    <td id="pofbp">0</td>
+                    <td id="pofcp">0</td>
+                  </tr>
+                  <tr>
+                    <td id="pofap2">0</td>
+                    <td id="pofbp2">0</td>
+                    <td id="pofcp2">0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </body>
+    </div>
+  );
 }
